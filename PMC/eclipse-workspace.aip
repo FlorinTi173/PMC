@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="13.5" version="13.5" Modules="java" RootPath="." Language="en" Id="{80E81E88-9B0F-4AAB-9A06-D903F80CB60E}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="IT-Fenix"/>
+    <ROW Property="ProductCode" Value="1033:{01D263CD-EA17-4B40-920D-23CEEF86C0AC} 1049:{7231526B-FD85-4B8A-A6EC-F38E875D04F4} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="eclipse-workspace"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{D0B43539-8FD2-4C45-BA6A-9043B2C7DA42}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DB_Dir" Directory_Parent="PMCportablemedicalcart_Dir" DefaultDir="DB"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Interface_Dir" Directory_Parent="PMCportablemedicalcart_Dir" DefaultDir="INTERF~1|Interface"/>
+    <ROW Directory="PMCinstaler_Dir" Directory_Parent="DesktopFolder" DefaultDir="PMC(IN~1|PMC(instaler)"/>
+    <ROW Directory="PMCportablemedicalcart_Dir" Directory_Parent="PMCinstaler_Dir" DefaultDir="PMC(PO~1|PMC(portable medical cart)"/>
+    <ROW Directory="Sistem_Dir" Directory_Parent="PMCportablemedicalcart_Dir" DefaultDir="Sistem"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="imgInterface_Dir" Directory_Parent="Interface_Dir" DefaultDir="IMGINT~1|imgInterface"/>
+    <ROW Directory="sistemResource_Dir" Directory_Parent="Sistem_Dir" DefaultDir="SISTEM~1|sistemResource"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="FileSearch.class" ComponentId="{BAE03204-FD2B-490D-9D01-11AA1C50E9B2}" Directory_="Sistem_Dir" Attributes="0" KeyPath="FileSearch.class" Type="0"/>
+    <ROW Component="FileSearch.exe" ComponentId="{F0ADB36B-A23D-4588-8CF4-8AC55E0330E9}" Directory_="APPDIR" Attributes="0" KeyPath="FileSearch.exe"/>
+    <ROW Component="IAccesFille.exe" ComponentId="{3B26ECB6-D09B-4D1C-922D-1B809D85691D}" Directory_="APPDIR" Attributes="0" KeyPath="IAccesFille.exe"/>
+    <ROW Component="IAccesFille1.class" ComponentId="{1C44ADDE-3323-43F0-B791-732771DF964A}" Directory_="Interface_Dir" Attributes="0" KeyPath="IAccesFille1.class" Type="0"/>
+    <ROW Component="IConfirm.exe" ComponentId="{8331BEFB-E8DB-463C-819C-BB7DD07190FD}" Directory_="APPDIR" Attributes="0" KeyPath="IConfirm.exe"/>
+    <ROW Component="IDokUser.exe" ComponentId="{A260539C-816E-4C49-AC78-0DB60BE3EBA5}" Directory_="APPDIR" Attributes="0" KeyPath="IDokUser.exe"/>
+    <ROW Component="IError.exe" ComponentId="{78FDB783-FFD2-453E-A986-98B002547CEB}" Directory_="APPDIR" Attributes="0" KeyPath="IError.exe"/>
+    <ROW Component="INote.exe" ComponentId="{698B3DCE-A9C3-48DB-BD1D-55939E4444BC}" Directory_="APPDIR" Attributes="0" KeyPath="INote.exe"/>
+    <ROW Component="ISimpleUser.exe" ComponentId="{D53719EE-BFDB-4764-931C-B904F723EEEE}" Directory_="APPDIR" Attributes="0" KeyPath="ISimpleUser.exe"/>
+    <ROW Component="Main.class" ComponentId="{446FECC1-1DD4-4877-9333-DBD813235395}" Directory_="PMCportablemedicalcart_Dir" Attributes="0" KeyPath="Main.class" Type="0"/>
+    <ROW Component="Main.exe" ComponentId="{DBB10988-8E81-4868-81A4-00410E4ABB88}" Directory_="APPDIR" Attributes="0" KeyPath="Main.exe"/>
+    <ROW Component="New_configuration.exe" ComponentId="{0B9CF373-9001-4351-B0AD-61C2F9E08E04}" Directory_="APPDIR" Attributes="0" KeyPath="New_configuration.exe"/>
+    <ROW Component="Owner.txt" ComponentId="{41222875-73CD-44E7-B060-84AE40926E70}" Directory_="sistemResource_Dir" Attributes="0" KeyPath="Owner.txt" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{A759E478-D90A-4ACC-9C0A-6D08C842D254}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="owner.jpg" ComponentId="{A8C5F5E3-8EF3-401E-9AC5-1E962D392803}" Directory_="imgInterface_Dir" Attributes="0" KeyPath="owner.jpg" Type="0"/>
+    <ROW Component="quite.txt" ComponentId="{B79494CC-375F-4452-985C-BFB43003265D}" Directory_="DB_Dir" Attributes="0" KeyPath="quite.txt" Type="0"/>
+    <ROW Component="sqlite3.dll" ComponentId="{C940A5D8-796C-490B-A5E6-1D2CA2852DF7}" Directory_="DB_Dir" Attributes="256" KeyPath="sqlite3.dll"/>
+    <ROW Component="sqlite3.exe" ComponentId="{336A97EB-846A-46B8-A514-AED655098F9C}" Directory_="DB_Dir" Attributes="0" KeyPath="sqlite3.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="FileSearch.class FileSearch.exe IAccesFille.exe IAccesFille1.class IConfirm.exe IDokUser.exe IError.exe INote.exe ISimpleUser.exe Main.class Main.exe New_configuration.exe Owner.txt ProductInformation owner.jpg quite.txt sqlite3.dll sqlite3.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="FileSearch.class" Component_="FileSearch.class" FileName="FILESE~1.CLA|FileSearch.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Sistem\FileSearch.class" SelfReg="false" NextFile="SetingsDB.class"/>
+    <ROW File="FileSearch.exe" Component_="FileSearch.exe" FileName="FILESE~1.EXE|FileSearch.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="IAccesFille.exe" DigSign="true"/>
+    <ROW File="IAccesFille.class" Component_="IAccesFille1.class" FileName="IACCES~6.CLA|IAccesFille.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IAccesFille.class" SelfReg="false" NextFile="IConfirm1.class"/>
+    <ROW File="IAccesFille.exe" Component_="IAccesFille.exe" FileName="IACCES~1.EXE|IAccesFille.exe" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false" NextFile="IConfirm.exe" DigSign="true"/>
+    <ROW File="IAccesFille1.class" Component_="IAccesFille1.class" FileName="IACCES~1.CLA|IAccesFille$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IAccesFille$1.class" SelfReg="false" NextFile="IAccesFille2.class"/>
+    <ROW File="IAccesFille2.class" Component_="IAccesFille1.class" FileName="IACCES~2.CLA|IAccesFille$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IAccesFille$2.class" SelfReg="false" NextFile="IAccesFille3.class"/>
+    <ROW File="IAccesFille3.class" Component_="IAccesFille1.class" FileName="IACCES~3.CLA|IAccesFille$3.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IAccesFille$3.class" SelfReg="false" NextFile="IAccesFille4.class"/>
+    <ROW File="IAccesFille4.class" Component_="IAccesFille1.class" FileName="IACCES~4.CLA|IAccesFille$4.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IAccesFille$4.class" SelfReg="false" NextFile="IAccesFille5.class"/>
+    <ROW File="IAccesFille5.class" Component_="IAccesFille1.class" FileName="IACCES~5.CLA|IAccesFille$5.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IAccesFille$5.class" SelfReg="false" NextFile="IAccesFille.class"/>
+    <ROW File="IConfirm.class" Component_="IAccesFille1.class" FileName="ICONFI~4.CLA|IConfirm.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirm.class" SelfReg="false" NextFile="IConfirmNote1.class"/>
+    <ROW File="IConfirm.exe" Component_="IConfirm.exe" FileName="IConfirm.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="IDokUser.exe" DigSign="true"/>
+    <ROW File="IConfirm1.class" Component_="IAccesFille1.class" FileName="ICONFI~1.CLA|IConfirm$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirm$1.class" SelfReg="false" NextFile="IConfirm2.class"/>
+    <ROW File="IConfirm2.class" Component_="IAccesFille1.class" FileName="ICONFI~2.CLA|IConfirm$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirm$2.class" SelfReg="false" NextFile="IConfirm3.class"/>
+    <ROW File="IConfirm3.class" Component_="IAccesFille1.class" FileName="ICONFI~3.CLA|IConfirm$3.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirm$3.class" SelfReg="false" NextFile="IConfirm.class"/>
+    <ROW File="IConfirmNote.class" Component_="IAccesFille1.class" FileName="ICONFI~7.CLA|IConfirmNote.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirmNote.class" SelfReg="false" NextFile="IDokUser1.class"/>
+    <ROW File="IConfirmNote1.class" Component_="IAccesFille1.class" FileName="ICONFI~5.CLA|IConfirmNote$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirmNote$1.class" SelfReg="false" NextFile="IConfirmNote2.class"/>
+    <ROW File="IConfirmNote2.class" Component_="IAccesFille1.class" FileName="ICONFI~6.CLA|IConfirmNote$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IConfirmNote$2.class" SelfReg="false" NextFile="IConfirmNote.class"/>
+    <ROW File="IDokUser.class" Component_="IAccesFille1.class" FileName="IDOKUS~3.CLA|IDokUser.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IDokUser.class" SelfReg="false" NextFile="IError1.class"/>
+    <ROW File="IDokUser.exe" Component_="IDokUser.exe" FileName="IDokUser.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="IError.exe" DigSign="true"/>
+    <ROW File="IDokUser1.class" Component_="IAccesFille1.class" FileName="IDOKUS~1.CLA|IDokUser$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IDokUser$1.class" SelfReg="false" NextFile="IDokUser2.class"/>
+    <ROW File="IDokUser2.class" Component_="IAccesFille1.class" FileName="IDOKUS~2.CLA|IDokUser$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IDokUser$2.class" SelfReg="false" NextFile="IDokUser.class"/>
+    <ROW File="IError.class" Component_="IAccesFille1.class" FileName="IERROR~3.CLA|IError.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IError.class" SelfReg="false" NextFile="owner.jpg"/>
+    <ROW File="IError.exe" Component_="IError.exe" FileName="IError.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="INote.exe" DigSign="true"/>
+    <ROW File="IError1.class" Component_="IAccesFille1.class" FileName="IERROR~1.CLA|IError$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IError$1.class" SelfReg="false" NextFile="IError2.class"/>
+    <ROW File="IError2.class" Component_="IAccesFille1.class" FileName="IERROR~2.CLA|IError$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IError$2.class" SelfReg="false" NextFile="IError.class"/>
+    <ROW File="INote.class" Component_="IAccesFille1.class" FileName="INOTE~1.CLA|INote.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\INote.class" SelfReg="false" NextFile="IPharmacistUser1.class"/>
+    <ROW File="INote.exe" Component_="INote.exe" FileName="INote.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="ISimpleUser.exe" DigSign="true"/>
+    <ROW File="INote1.class" Component_="IAccesFille1.class" FileName="INOTE$~1.CLA|INote$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\INote$1.class" SelfReg="false" NextFile="INote.class"/>
+    <ROW File="IPharmacistUser.class" Component_="IAccesFille1.class" FileName="IPHARM~3.CLA|IPharmacistUser.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IPharmacistUser.class" SelfReg="false" NextFile="ISimpleUser1.class"/>
+    <ROW File="IPharmacistUser1.class" Component_="IAccesFille1.class" FileName="IPHARM~1.CLA|IPharmacistUser$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IPharmacistUser$1.class" SelfReg="false" NextFile="IPharmacistUser2.class"/>
+    <ROW File="IPharmacistUser2.class" Component_="IAccesFille1.class" FileName="IPHARM~2.CLA|IPharmacistUser$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\IPharmacistUser$2.class" SelfReg="false" NextFile="IPharmacistUser.class"/>
+    <ROW File="ISimpleUser.class" Component_="IAccesFille1.class" FileName="ISIMPL~3.CLA|ISimpleUser.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\ISimpleUser.class" SelfReg="false" NextFile="Main.class"/>
+    <ROW File="ISimpleUser.exe" Component_="ISimpleUser.exe" FileName="ISIMPL~1.EXE|ISimpleUser.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="Main.exe" DigSign="true"/>
+    <ROW File="ISimpleUser1.class" Component_="IAccesFille1.class" FileName="ISIMPL~1.CLA|ISimpleUser$1.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\ISimpleUser$1.class" SelfReg="false" NextFile="ISimpleUser2.class"/>
+    <ROW File="ISimpleUser2.class" Component_="IAccesFille1.class" FileName="ISIMPL~2.CLA|ISimpleUser$2.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\ISimpleUser$2.class" SelfReg="false" NextFile="ISimpleUser.class"/>
+    <ROW File="Main.class" Component_="Main.class" FileName="MAIN~1.CLA|Main.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Main.class" SelfReg="false" NextFile="FileSearch.class"/>
+    <ROW File="Main.exe" Component_="Main.exe" FileName="Main.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="New_configuration.exe" DigSign="true"/>
+    <ROW File="New_configuration.exe" Component_="New_configuration.exe" FileName="NEW_CO~1.EXE|New_configuration.exe" Attributes="0" SourcePath="&lt;AI_STUBS&gt;aijclw.exe" SelfReg="false" NextFile="quite.txt" DigSign="true"/>
+    <ROW File="Owner.txt" Component_="Owner.txt" FileName="Owner.txt" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Sistem\sistemResource\Owner.txt" SelfReg="false" NextFile="sqlitejdbc3.30.1.jar_1"/>
+    <ROW File="SetingsDB.class" Component_="FileSearch.class" FileName="SETING~1.CLA|SetingsDB.class" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Sistem\SetingsDB.class" SelfReg="false" NextFile="Owner.txt"/>
+    <ROW File="owner.jpg" Component_="owner.jpg" FileName="owner.jpg" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\Interface\imgInterface\owner.jpg" SelfReg="false" NextFile="INote1.class"/>
+    <ROW File="pmc.db" Component_="quite.txt" FileName="pmc.db" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\DB\pmc.db" SelfReg="false" NextFile="sqlitejdbc3.30.1.jar"/>
+    <ROW File="quite.txt" Component_="quite.txt" FileName="QUITE~1.TXT|.quite.txt" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\DB\.quite.txt" SelfReg="false" NextFile="pmc.db"/>
+    <ROW File="sqlite3.def" Component_="quite.txt" FileName="sqlite3.def" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\DB\sqlite3.def" SelfReg="false" NextFile="sqlite3.dll"/>
+    <ROW File="sqlite3.dll" Component_="sqlite3.dll" FileName="sqlite3.dll" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\DB\sqlite3.dll" SelfReg="false" NextFile="sqlite3.exe"/>
+    <ROW File="sqlite3.exe" Component_="sqlite3.exe" FileName="sqlite3.exe" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\DB\sqlite3.exe" SelfReg="false" NextFile="IAccesFille1.class" DigSign="true"/>
+    <ROW File="sqlitejdbc3.30.1.jar" Component_="quite.txt" FileName="SQLITE~1.JAR|sqlite-jdbc-3.30.1.jar" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin\DB\sqlite-jdbc-3.30.1.jar" SelfReg="false" NextFile="sqlite3.def"/>
+    <ROW File="sqlitejdbc3.30.1.jar_1" Component_="Main.class" FileName="SQLITE~1.JAR|sqlite-jdbc-3.30.1.jar" Attributes="0" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\src\DB\sqlite-jdbc-3.30.1.jar" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" Languages="en;ru" InstallationType="4" PackageType="1" ExtUI="true" UseLargeSchema="true" MsiPackageType="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_ru.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="PreparePrereqDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\PreparePrereqDlg.aip"/>
+    <ROW Fragment="PrerequisitesDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\PrerequisitesDlg.aip"/>
+    <ROW Fragment="ProgressPrereqDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\ProgressPrereqDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\WelcomeDlg.aip"/>
+    <ROW Fragment="WelcomePrereqDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\WelcomePrereqDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="WelcomePrereqDlg" Control="Description" Type="Text" X="175" Y="89" Width="323" Height="220" Attributes="196611" Text="The setup has determined that some of the prerequisites needed to run [ProductName] are missing. This wizard will assist you in getting and installing those prerequisites. Click &quot;[Text_Next]&quot; to continue or &quot;[ButtonText_Cancel]&quot; to exit the [Wizard]." Order="800" TextLocId="Control.Text.WelcomePrereqDlg#Description" MsiKey="WelcomePrereqDlg#Description"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="PreparingLabel" Type="Text" X="35" Y="114" Width="104" Height="11" Attributes="196611" Text="Preparing installation" TextStyle="Labels" Order="900" TextLocId="Graphite.Control.Text.Dlg#PreparingLabel" MsiKey="WelcomePrereqDlg#PreparingLabel"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="InstallingLabel" Type="Text" X="35" Y="138" Width="104" Height="11" Attributes="196611" Text="Installing" TextStyle="Labels" Order="1000" TextLocId="Graphite.Control.Text.Dlg#InstallingLabel" MsiKey="WelcomePrereqDlg#InstallingLabel"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="FinalizingLabel" Type="Text" X="35" Y="162" Width="104" Height="11" Attributes="196611" Text="Finalizing installation" TextStyle="Labels" Order="1100" TextLocId="Graphite.Control.Text.Dlg#FinalizingLabel" MsiKey="WelcomePrereqDlg#FinalizingLabel"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Next" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="1401"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Next" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Remove&quot;" Ordering="1403"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Next" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Repair&quot;" Ordering="1402"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AppDataFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="FILESE~1.INI|FileSearch.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="FileSearch.exe"/>
+    <ROW IniFile="ApplicationType_1" FileName="IACCES~2.INI|IAccesFille.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="IAccesFille.exe"/>
+    <ROW IniFile="ApplicationType_2" FileName="IConfirm.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="IConfirm.exe"/>
+    <ROW IniFile="ApplicationType_3" FileName="IDokUser.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="IDokUser.exe"/>
+    <ROW IniFile="ApplicationType_4" FileName="IError.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="IError.exe"/>
+    <ROW IniFile="ApplicationType_5" FileName="INote.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="INote.exe"/>
+    <ROW IniFile="ApplicationType_6" FileName="ISIMPL~1.INI|ISimpleUser.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="ISimpleUser.exe"/>
+    <ROW IniFile="ApplicationType_7" FileName="Main.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="Main.exe"/>
+    <ROW IniFile="ApplicationType_8" FileName="NEW_CO~1.INI|New_configuration.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="New_configuration.exe"/>
+    <ROW IniFile="ClassPath" FileName="FILESE~1.INI|FileSearch.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="FileSearch.exe"/>
+    <ROW IniFile="ClassPath_1" FileName="IACCES~2.INI|IAccesFille.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="IAccesFille.exe"/>
+    <ROW IniFile="ClassPath_2" FileName="IConfirm.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="IConfirm.exe"/>
+    <ROW IniFile="ClassPath_3" FileName="IDokUser.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="IDokUser.exe"/>
+    <ROW IniFile="ClassPath_4" FileName="IError.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="IError.exe"/>
+    <ROW IniFile="ClassPath_5" FileName="INote.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="INote.exe"/>
+    <ROW IniFile="ClassPath_6" FileName="ISIMPL~1.INI|ISimpleUser.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="ISimpleUser.exe"/>
+    <ROW IniFile="ClassPath_7" FileName="Main.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="Main.exe"/>
+    <ROW IniFile="ClassPath_8" FileName="NEW_CO~1.INI|New_configuration.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[PMCportablemedicalcart_Dir];[#sqlitejdbc3.30.1.jar_1];" Action="0" Component_="New_configuration.exe"/>
+    <ROW IniFile="FailureCheck" FileName="FILESE~1.INI|FileSearch.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="FileSearch.exe"/>
+    <ROW IniFile="FailureCheck_1" FileName="IACCES~2.INI|IAccesFille.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="IAccesFille.exe"/>
+    <ROW IniFile="FailureCheck_2" FileName="IConfirm.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="IConfirm.exe"/>
+    <ROW IniFile="FailureCheck_3" FileName="IDokUser.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="IDokUser.exe"/>
+    <ROW IniFile="FailureCheck_4" FileName="IError.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="IError.exe"/>
+    <ROW IniFile="FailureCheck_5" FileName="INote.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="INote.exe"/>
+    <ROW IniFile="FailureCheck_6" FileName="ISIMPL~1.INI|ISimpleUser.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="ISimpleUser.exe"/>
+    <ROW IniFile="FailureCheck_7" FileName="Main.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="Main.exe"/>
+    <ROW IniFile="FailureCheck_8" FileName="NEW_CO~1.INI|New_configuration.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="New_configuration.exe"/>
+    <ROW IniFile="MainClass" FileName="FILESE~1.INI|FileSearch.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Sistem.FileSearch" Action="0" Component_="FileSearch.exe"/>
+    <ROW IniFile="MainClass_1" FileName="IACCES~2.INI|IAccesFille.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.IAccesFille" Action="0" Component_="IAccesFille.exe"/>
+    <ROW IniFile="MainClass_2" FileName="IConfirm.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.IConfirm" Action="0" Component_="IConfirm.exe"/>
+    <ROW IniFile="MainClass_3" FileName="IDokUser.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.IDokUser" Action="0" Component_="IDokUser.exe"/>
+    <ROW IniFile="MainClass_4" FileName="IError.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.IError" Action="0" Component_="IError.exe"/>
+    <ROW IniFile="MainClass_5" FileName="INote.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.INote" Action="0" Component_="INote.exe"/>
+    <ROW IniFile="MainClass_6" FileName="ISIMPL~1.INI|ISimpleUser.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.ISimpleUser" Action="0" Component_="ISimpleUser.exe"/>
+    <ROW IniFile="MainClass_7" FileName="Main.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Main" Action="0" Component_="Main.exe"/>
+    <ROW IniFile="MainClass_8" FileName="NEW_CO~1.INI|New_configuration.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Interface.IAccesFille" Action="0" Component_="New_configuration.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="FILESE~1.INI|FileSearch.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="FileSearch.exe"/>
+    <ROW IniFile="MaximumVersion_1" FileName="IACCES~2.INI|IAccesFille.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="IAccesFille.exe"/>
+    <ROW IniFile="MaximumVersion_2" FileName="IConfirm.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="IConfirm.exe"/>
+    <ROW IniFile="MaximumVersion_3" FileName="IDokUser.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="IDokUser.exe"/>
+    <ROW IniFile="MaximumVersion_4" FileName="IError.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="IError.exe"/>
+    <ROW IniFile="MaximumVersion_5" FileName="INote.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="INote.exe"/>
+    <ROW IniFile="MaximumVersion_6" FileName="ISIMPL~1.INI|ISimpleUser.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="ISimpleUser.exe"/>
+    <ROW IniFile="MaximumVersion_7" FileName="Main.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="Main.exe"/>
+    <ROW IniFile="MaximumVersion_8" FileName="NEW_CO~1.INI|New_configuration.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="New_configuration.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="FILESE~1.INI|FileSearch.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="FileSearch.exe"/>
+    <ROW IniFile="MinimumVersion_1" FileName="IACCES~2.INI|IAccesFille.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="IAccesFille.exe"/>
+    <ROW IniFile="MinimumVersion_2" FileName="IConfirm.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="IConfirm.exe"/>
+    <ROW IniFile="MinimumVersion_3" FileName="IDokUser.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="IDokUser.exe"/>
+    <ROW IniFile="MinimumVersion_4" FileName="IError.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="IError.exe"/>
+    <ROW IniFile="MinimumVersion_5" FileName="INote.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="INote.exe"/>
+    <ROW IniFile="MinimumVersion_6" FileName="ISIMPL~1.INI|ISimpleUser.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="ISimpleUser.exe"/>
+    <ROW IniFile="MinimumVersion_7" FileName="Main.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="Main.exe"/>
+    <ROW IniFile="MinimumVersion_8" FileName="NEW_CO~1.INI|New_configuration.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="New_configuration.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="FileSearch.exe" Launcher="FileSearch.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#New_configuration.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="0"/>
+    <ROW Name="IAccesFille.exe" Launcher="IAccesFille.exe" MainClass="MainClass_1" ClassPath="ClassPath_1" JREMin="MinimumVersion_1" JREMax="MaximumVersion_1" AppType="ApplicationType_1" MinusList="#IDokUser.exe;APPDIR;#FileSearch.exe;#IAccesFille.exe;#IConfirm.exe;#Main.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_1" UACExecutionLevel="0" Platform64="true"/>
+    <ROW Name="IConfirm.exe" Launcher="IConfirm.exe" MainClass="MainClass_2" ClassPath="ClassPath_2" JREMin="MinimumVersion_2" JREMax="MaximumVersion_2" AppType="ApplicationType_2" MinusList="#IDokUser.exe;APPDIR;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_2" UACExecutionLevel="0"/>
+    <ROW Name="IDokUser.exe" Launcher="IDokUser.exe" MainClass="MainClass_3" ClassPath="ClassPath_3" JREMin="MinimumVersion_3" JREMax="MaximumVersion_3" AppType="ApplicationType_3" MinusList="APPDIR;#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_3" UACExecutionLevel="0"/>
+    <ROW Name="IError.exe" Launcher="IError.exe" MainClass="MainClass_4" ClassPath="ClassPath_4" JREMin="MinimumVersion_4" JREMax="MaximumVersion_4" AppType="ApplicationType_4" MinusList="APPDIR;#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_4" UACExecutionLevel="0"/>
+    <ROW Name="INote.exe" Launcher="INote.exe" MainClass="MainClass_5" ClassPath="ClassPath_5" JREMin="MinimumVersion_5" JREMax="MaximumVersion_5" AppType="ApplicationType_5" MinusList="APPDIR;#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_5" UACExecutionLevel="0"/>
+    <ROW Name="ISimpleUser.exe" Launcher="ISimpleUser.exe" MainClass="MainClass_6" ClassPath="ClassPath_6" JREMin="MinimumVersion_6" JREMax="MaximumVersion_6" AppType="ApplicationType_6" MinusList="APPDIR;#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_6" UACExecutionLevel="0"/>
+    <ROW Name="Main.exe" Launcher="Main.exe" MainClass="MainClass_7" ClassPath="ClassPath_7" JREMin="MinimumVersion_7" JREMax="MaximumVersion_7" AppType="ApplicationType_7" MinusList="APPDIR;#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;#New_configuration.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_7" UACExecutionLevel="0"/>
+    <ROW Name="New_configuration.exe" Launcher="New_configuration.exe" MainClass="MainClass_8" ClassPath="ClassPath_8" JREMin="MinimumVersion_8" JREMax="MaximumVersion_8" AppType="ApplicationType_8" MinusList="#IDokUser.exe;#FileSearch.exe;#IAccesFille.exe;#Main.exe;#IConfirm.exe;#New_configuration.exe;#IError.exe;#INote.exe;#ISimpleUser.exe;APPDIR;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2020" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck_8" UACExecutionLevel="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="graphite"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="E74CF256044426188A26D82E2C25D85" DisplayName="Java SE Runtime Environment 6u45 x64" VersionMin="1.6" SetupFileUrl="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jre-6u45-oth-JPR" Location="2" ExactSize="0" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" Operator="0" Options="xy"/>
+    <ATTRIBUTE name="PrereqsOrder" value="E74CF256044426188A26D82E2C25D85"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="E74CF256044426188A26D82E2C25D85CurrentVersion" Prereq="E74CF256044426188A26D82E2C25D85" SearchType="2" SearchString="HKLM\SOFTWARE\JavaSoft\Java Runtime Environment\CurrentVersion" VerMin="1.6" Order="1" Property="PreReqSearch_E74CF256044426188A26D82E2C25D85"/>
+    <ROW SearchKey="E74CF256044426188A26D82E2C25D85JavaRuntimeEnvironment" Prereq="E74CF256044426188A26D82E2C25D85" SearchType="1" SearchString="HKLM\SOFTWARE\JavaSoft\Java Runtime Environment" VerMin="1.6.0_45" Order="2" Property="PreReqSearch_1_E74CF256044426188A26D82E2C25D85"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="PMCportablemedicalcart_Dir" SourcePath="D:\eclipse-workspace\PMC(portable medical cart)\bin"/>
+  </COMPONENT>
+</DOCUMENT>
